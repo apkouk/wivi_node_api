@@ -1,0 +1,84 @@
+{
+	"variables": [],
+	"info": {
+		"name": "wivi",
+		"_postman_id": "280100b5-51c5-a84e-62f9-da1cd7945f49",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add cinema",
+			"request": {
+				"url": "http://localhost:8090/api/cinemas/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"Id\" : \"666\",\r\n\t\"Name\" : \"test\",\r\n   \"Tag\" : \"test-tag\",\r\n   \"Address\" : \"test address\",\r\n   \"Telephone\" : \"666 666 666\",\r\n   \"Url\" : \"www.test.com\",\r\n   \"Latitude\" : \"21.009099\",\r\n   \"Longitude\" : \"21.98982\",\r\n   \"NigtPasses\" : \"-\",\r\n   \"MorningPasses\" : \"-\",\r\n   \"CheapDay\" : \"T\",\r\n   \"OnlineTickets\" : \"-\",\r\n   \"MapUrl\" : \"-\",\r\n   \"TownId\" : \"1\",\r\n   \"Town\" : \"Test town\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get all cinemas",
+			"request": {
+				"url": "http://localhost:8090/api/cinemas/",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "get cinema by Id",
+			"request": {
+				"url": "http://localhost:8090/api/cinemas/5bacec4cee00c4461096fb0a",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "update cinema",
+			"request": {
+				"url": "http://localhost:8090/api/cinemas/5bacec4cee00c4461096fb09",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\": \"556\",\r\n    \"Name\": \"Yelmo Cines Sant Cugat 3D\",\r\n    \"Tag\": \"yelmo-cines-sant-cugat-3d\",\r\n    \"Address\": \"CC Sant Cugat (Av. Via Augusta 2-14)   Sant Cugat del Vallès   (Barcelona) \",\r\n    \"Telephone\": \"902220922\",\r\n    \"Url\": \"https://cartelera.elperiodico.com/cines/sant-cugat-del-vallas/yelmo-cines-sant-cugat-3d-083.html\",\r\n    \"NightPasses \": \"\",\r\n    \"MorningPasses \": \"DF\",\r\n    \"CheapDay \": \"X 5,50\",\r\n    \"OnlineTickets \": \"\",\r\n    \"MapUrl \": \"\\\"https://maps.google.com/maps/api/staticmap?zoom=13&size=478x220&markers=color:red|41.483318,2.046354&mobile=true&sensor=false\\\" alt=\\\"googlemaps - Gran Via de les Corts Catalanes. 08001 Barcelona\\\"\",\r\n    \"TownId\": \"1078\",\r\n    \"Town\": \"                                                Sant Cugat del Vallès                                                 (Barcelona)                                            \",\r\n    \"Latitude\": \"41.483318\",\r\n    \"Longitude\": \"2.046354\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "delete cinema",
+			"request": {
+				"url": "http://localhost:8090/api/cinemas/5bad21e56c8b623d2c39a611",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

@@ -26,6 +26,7 @@ router.use(function (req, res, next) {
 
 router.route('/cinemas').post(function (req, res) {
     var p = new cinema();
+    p.ObjectId = req.body._id;
     p.Id = req.body.Id;
     p.Name = req.body.Name;
     p.Tag = req.body.Tag;
